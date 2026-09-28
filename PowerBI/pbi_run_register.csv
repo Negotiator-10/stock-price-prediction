@@ -1,0 +1,11 @@
+Run ID,Analysis,Purpose,Key Result,Verdict,Status
+R-01,"Baseline vs 8 models, price (Option A)",Test if any model beats naive on raw price,No model beat naive (best 11.62 vs 10.40); trees and LSTM broke on the price trend,No edge,Complete
+R-02,"Baseline vs 8 models, return (Option B)",Predict 5-day return instead of raw price,"Lasso beat naive on one split (10.16 vs 10.40), direction 63.7 pct",Edge on single window,Complete
+R-03,"Walk-forward, 6 folds",Test if the edge holds across time,Beat naive on RMSE only 3 of 6 folds; direction about 58 pct,Edge not robust,Complete
+R-04,Drift and significance test,"Judge direction against always-up, not a coin flip",Model 58.0 pct equals always-up; p=0.51,Direction not real,Complete
+R-05,Multiple-testing correction,Adjust for the many configurations tried,Apparent edge not significant after correction,No edge,Complete
+R-06,Rolling short-window plus cost backtest,Investigate a momentum signal and cost it,Sharpe above 3 flagged a leak; look-ahead found in the labels,Leak found,Complete
+R-07,Purged re-test,Remove look-ahead and re-measure the edge,Edge collapses to negative and insignificant at every window,Edge rejected,Complete
+R-08,"Fresh-stock test (MSFT, JPM, KO)",Check if the effect is stock-specific,"Same leak, edge vanishes after purge",Method artefact,Complete
+R-09,Regime test (purged),Look for a market regime where the model works,About 51 pct everywhere; always-up wins in all regimes,No edge,Complete
+R-10,Volatility prediction,"Test if volatility, not direction, is predictable",Model R2 0.42 vs persistence baseline 0.22,Predictable (positive finding),Complete

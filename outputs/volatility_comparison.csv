@@ -1,0 +1,7 @@
+name,kind,R2
+constant (mean vol),baseline,-0.001
+"persistence, last 5-day vol",baseline,0.217
+"persistence, last 20-day vol",baseline,0.218
+LinearRegression,model,0.418
+RandomForest,model,0.142
+XGBoost,model,-0.179

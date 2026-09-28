@@ -1,0 +1,7 @@
+data/
+*.zip
+*.csv.gz
+AAPL_my_features.xlsx
+__pycache__/
+*.pyc
+~$*

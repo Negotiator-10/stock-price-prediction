@@ -1,0 +1,7 @@
+Predictor,Type,R2
+constant (mean vol),Baseline,-0.001
+"persistence, last 5-day vol",Baseline,0.217
+"persistence, last 20-day vol",Baseline,0.218
+LinearRegression,Model,0.418
+RandomForest,Model,0.142
+XGBoost,Model,-0.179

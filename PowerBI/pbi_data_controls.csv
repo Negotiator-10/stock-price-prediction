@@ -1,0 +1,15 @@
+Control,Description,Result,Status
+Records loaded,Daily price records read from source,3732,Pass
+Fields per record,Columns in the raw file,64,Info
+Missing values,Empty cells across all fields,0,Pass
+Duplicate dates,Repeated trading days,0,Pass
+Chronological order,Rows sorted oldest to newest,Yes,Pass
+Date coverage,First to last trading day,2005-10-17 to 2020-08-13,Info
+Records after target,Rows kept after building the 5-day target,3727,Pass
+Dropped for target,"Rows with no known 5-day future, removed",5,Info
+Train records,"Oldest 80 percent, time ordered",2981,Info
+Test records,"Newest 20 percent, time ordered",746,Info
+Feature reduction,Near-duplicate features dropped (corr above 0.95),60 to 24,Pass
+Target leakage control,Close_forcast excluded from model inputs,Applied,Pass
+Scaler fit control,Scaler fitted on training data only,Applied,Pass
+Purge control,Overlapping 5-day labels dropped at the split,Applied,Pass

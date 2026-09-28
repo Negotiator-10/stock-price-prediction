@@ -1,0 +1,13 @@
+Fold,Period,Model,RMSE
+1,2007-12-03 to 2010-01-12,Lasso model,1.11
+1,2007-12-03 to 2010-01-12,Naive baseline,1.08
+2,2010-01-13 to 2012-02-22,Lasso model,1.57
+2,2010-01-13 to 2012-02-22,Naive baseline,1.6
+3,2012-02-23 to 2014-04-04,Lasso model,2.71
+3,2012-02-23 to 2014-04-04,Naive baseline,2.64
+4,2014-04-07 to 2016-05-16,Lasso model,3.49
+4,2014-04-07 to 2016-05-16,Naive baseline,3.45
+5,2016-05-17 to 2018-06-26,Lasso model,4.31
+5,2016-05-17 to 2018-06-26,Naive baseline,4.38
+6,2018-06-27 to 2020-08-06,Lasso model,11.47
+6,2018-06-27 to 2020-08-06,Naive baseline,11.76

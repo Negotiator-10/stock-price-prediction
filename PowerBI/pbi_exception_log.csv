@@ -1,0 +1,8 @@
+Exception ID,Date Raised,Control,Observation,Severity,Status,Resolution
+EX-01,2010-01-12,Model must beat naive baseline on RMSE (walk-forward fold 1),Model RMSE 1.11 vs baseline 1.08,Low,Closed,No accuracy edge in this period; within expectation
+EX-02,2014-04-04,Model must beat naive baseline on RMSE (walk-forward fold 3),Model RMSE 2.71 vs baseline 2.64,Low,Closed,No accuracy edge in this period; within expectation
+EX-03,2016-05-16,Model must beat naive baseline on RMSE (walk-forward fold 4),Model RMSE 3.49 vs baseline 3.45,Low,Closed,No accuracy edge in this period; within expectation
+EX-04,2020-08-13,Directional edge must beat the always-up baseline,"Model 58.0 pct equals always-up 58.0 pct, edge 0.0 pts, p=0.51",High,Closed,Direction has no genuine skill once market drift is removed
+EX-05,2020-08-13,Backtest Sharpe must be within a plausible range,Rolling-window strategy Sharpe above 3 and returns in the hundreds of thousands pct,Critical,Closed,Root cause look-ahead leakage in the 5-day labels; purging applied
+EX-06,2020-08-13,Edge must remain significant after purging look-ahead,Post-purge edge negative and insignificant at every window size,High,Closed,Momentum edge was entirely leakage; signal rejected
+EX-07,2020-08-13,Effect must reproduce as a real signal on unseen stocks,"Same leak reproduced on MSFT, JPM, KO; edge vanishes after purge",Medium,Closed,"Confirms a method artefact, not a stock-specific edge"

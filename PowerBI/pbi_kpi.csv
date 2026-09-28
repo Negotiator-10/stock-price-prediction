@@ -1,0 +1,7 @@
+Metric,Value,Unit,Sort
+Naive baseline RMSE (price),10.4,USD,1
+Best model RMSE (price),11.62,USD,2
+Best directional accuracy (return),63.7,Pct,3
+Volatility model R2,0.418,R2,4
+Volatility baseline R2,0.218,R2,5
+Walk-forward folds beating naive,3.0,of 6,6

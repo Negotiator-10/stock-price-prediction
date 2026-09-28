@@ -1,0 +1,19 @@
+Target,Model,RMSE,MAE,MAPE Pct,R2,Dir Accuracy Pct,Naive RMSE,Beats Naive,Is Baseline
+Price (Option A),Naive (no change),10.398,6.919,3.105,0.974,0.0,10.398,Baseline,True
+Price (Option A),Lasso,11.617,7.837,3.409,0.968,43.029,10.398,No,False
+Price (Option A),ElasticNet,11.635,7.864,3.42,0.967,43.7,10.398,No,False
+Price (Option A),LinearRegression,11.637,7.85,3.413,0.967,43.432,10.398,No,False
+Price (Option A),Ridge,11.637,7.851,3.414,0.967,43.432,10.398,No,False
+Price (Option A),RandomForest,95.651,70.99,27.945,-1.199,37.265,10.398,No,False
+Price (Option A),XGBoost,95.771,71.206,28.054,-1.204,36.729,10.398,No,False
+Price (Option A),AdaBoost,98.228,74.063,29.373,-1.319,36.461,10.398,No,False
+Price (Option A),LSTM,169.287,151.241,66.074,-5.879,36.277,10.398,No,False
+Return (Option B),Lasso,10.161,6.621,3.0,0.975,63.673,10.398,Yes,False
+Return (Option B),ElasticNet,10.161,6.621,3.0,0.975,63.673,10.398,Yes,False
+Return (Option B),AdaBoost,10.396,6.959,3.122,0.974,54.558,10.398,Yes,False
+Return (Option B),Naive (no change),10.398,6.919,3.105,0.974,0.0,10.398,Baseline,True
+Return (Option B),RandomForest,10.933,7.342,3.274,0.971,49.196,10.398,No,False
+Return (Option B),XGBoost,11.161,7.564,3.381,0.97,50.536,10.398,No,False
+Return (Option B),LSTM,12.588,8.297,3.597,0.962,47.418,10.398,No,False
+Return (Option B),Ridge,17.447,11.355,4.531,0.927,35.791,10.398,No,False
+Return (Option B),LinearRegression,19.541,12.647,4.98,0.908,36.059,10.398,No,False
